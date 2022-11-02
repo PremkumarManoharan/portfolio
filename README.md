@@ -1,6 +1,6 @@
 # portfolio
 
-A new Flutter project.
+My Portfolio in Flutter Web deploying in Azure cloud
 
 ## Getting Started
 
