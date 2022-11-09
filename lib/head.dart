@@ -26,7 +26,7 @@ class _HeadingState extends State<Heading> {
         Padding(
           padding: EdgeInsets.all(width * 0.015),
           child: Text(
-            "CODER",
+            "INOVATOR",
             style: TextStyle(
               fontFamily: 'Nunito',
               fontSize: width * 0.02,
@@ -41,6 +41,7 @@ class _HeadingState extends State<Heading> {
             child: Row(
               children: [
                 MouseRegion(
+    
                   cursor: SystemMouseCursors.click,
                   onExit: (event) => {
                     setState(
