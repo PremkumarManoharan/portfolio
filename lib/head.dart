@@ -141,7 +141,7 @@ class _HeadingState extends State<Heading> {
                     child: Padding(
                       padding: EdgeInsets.all(width * 0.007),
                       child: Text(
-                        "Services",
+                        "Skills",
                         style: TextStyle(
                           fontFamily: 'Nunito',
                           fontSize: width * 0.01,

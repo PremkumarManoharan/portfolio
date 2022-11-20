@@ -15,7 +15,7 @@ class _DeploymentProcessState extends State<DeploymentProcess> {
     return Column(
       children: [
         Text(
-          "You are served By",
+          "Deployment Process Used",
           style: TextStyle(
               fontFamily: "Nunito",
               fontSize: width * 0.03,
