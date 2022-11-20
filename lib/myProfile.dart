@@ -11,14 +11,14 @@ class _MyProfileState extends State<MyProfile> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    double height = MediaQuery.of(context).size.height;
+    //double height = MediaQuery.of(context).size.height;
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Column(
           children: [
             Container(
-              color: Color(0xffFF4900),
+              color: const Color(0xffFF4900),
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text("Hello, I am",

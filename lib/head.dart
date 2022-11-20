@@ -37,184 +37,182 @@ class _HeadingState extends State<Heading> {
         ),
         Padding(
           padding: EdgeInsets.only(left: width * 0.3),
-          child: Expanded(
-            child: Row(
-              children: [
-                MouseRegion(
+          child: Row(
+            children: [
+              MouseRegion(
     
-                  cursor: SystemMouseCursors.click,
-                  onExit: (event) => {
-                    setState(
-                      () {
-                        headingColors[0] = false;
-                      },
-                    )
-                  },
-                  onHover: ((event) => {
-                        setState(
-                          () {
-                            headingColors[0] = true;
-                          },
-                        )
-                      }),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        color:
-                            headingColors[0] ? Color(0xffFF4900) : Colors.black,
-                        borderRadius: BorderRadius.circular(width * 0.010)),
-                    child: Padding(
-                      padding: EdgeInsets.all(width * 0.007),
-                      child: Text(
-                        "About Me",
-                        style: TextStyle(
-                          fontFamily: 'Nunito',
-                          fontSize: width * 0.01,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        ),
+                cursor: SystemMouseCursors.click,
+                onExit: (event) => {
+                  setState(
+                    () {
+                      headingColors[0] = false;
+                    },
+                  )
+                },
+                onHover: ((event) => {
+                      setState(
+                        () {
+                          headingColors[0] = true;
+                        },
+                      )
+                    }),
+                child: Container(
+                  decoration: BoxDecoration(
+                      color:
+                          headingColors[0] ? const Color(0xffFF4900) : Colors.black,
+                      borderRadius: BorderRadius.circular(width * 0.010)),
+                  child: Padding(
+                    padding: EdgeInsets.all(width * 0.007),
+                    child: Text(
+                      "About Me",
+                      style: TextStyle(
+                        fontFamily: 'Nunito',
+                        fontSize: width * 0.01,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: width * 0.055,
-                ),
-                MouseRegion(
-                  cursor: SystemMouseCursors.click,
-                  onExit: (event) => {
-                    setState(
-                      () {
-                        headingColors[1] = false;
-                      },
-                    )
-                  },
-                  onHover: ((event) => {
-                        setState(
-                          () {
-                            headingColors[1] = true;
-                          },
-                        )
-                      }),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        color:
-                            headingColors[1] ? Color(0xffFF4900) : Colors.black,
-                        borderRadius: BorderRadius.circular(width * 0.010)),
-                    child: Padding(
-                      padding: EdgeInsets.all(width * 0.007),
-                      child: Text(
-                        "Blogs",
-                        style: TextStyle(
-                          fontFamily: 'Nunito',
-                          fontSize: width * 0.01,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        ),
+              ),
+              SizedBox(
+                width: width * 0.055,
+              ),
+              MouseRegion(
+                cursor: SystemMouseCursors.click,
+                onExit: (event) => {
+                  setState(
+                    () {
+                      headingColors[1] = false;
+                    },
+                  )
+                },
+                onHover: ((event) => {
+                      setState(
+                        () {
+                          headingColors[1] = true;
+                        },
+                      )
+                    }),
+                child: Container(
+                  decoration: BoxDecoration(
+                      color:
+                          headingColors[1] ?const Color(0xffFF4900) : Colors.black,
+                      borderRadius: BorderRadius.circular(width * 0.010)),
+                  child: Padding(
+                    padding: EdgeInsets.all(width * 0.007),
+                    child: Text(
+                      "Blogs",
+                      style: TextStyle(
+                        fontFamily: 'Nunito',
+                        fontSize: width * 0.01,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: width * 0.055,
-                ),
-                MouseRegion(
-                  cursor: SystemMouseCursors.click,
-                  onExit: (event) => {
-                    setState(
-                      () {
-                        headingColors[2] = false;
-                      },
-                    )
-                  },
-                  onHover: ((event) => {
-                        setState(
-                          () {
-                            headingColors[2] = true;
-                          },
-                        )
-                      }),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        color:
-                            headingColors[2] ? Color(0xffFF4900) : Colors.black,
-                        borderRadius: BorderRadius.circular(width * 0.010)),
-                    child: Padding(
-                      padding: EdgeInsets.all(width * 0.007),
-                      child: Text(
-                        "Skills",
-                        style: TextStyle(
-                          fontFamily: 'Nunito',
-                          fontSize: width * 0.01,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        ),
+              ),
+              SizedBox(
+                width: width * 0.055,
+              ),
+              MouseRegion(
+                cursor: SystemMouseCursors.click,
+                onExit: (event) => {
+                  setState(
+                    () {
+                      headingColors[2] = false;
+                    },
+                  )
+                },
+                onHover: ((event) => {
+                      setState(
+                        () {
+                          headingColors[2] = true;
+                        },
+                      )
+                    }),
+                child: Container(
+                  decoration: BoxDecoration(
+                      color:
+                          headingColors[2] ?const Color(0xffFF4900) : Colors.black,
+                      borderRadius: BorderRadius.circular(width * 0.010)),
+                  child: Padding(
+                    padding: EdgeInsets.all(width * 0.007),
+                    child: Text(
+                      "Skills",
+                      style: TextStyle(
+                        fontFamily: 'Nunito',
+                        fontSize: width * 0.01,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: width * 0.055,
-                ),
-                MouseRegion(
-                  cursor: SystemMouseCursors.click,
-                  onExit: (event) => {
-                    setState(
-                      () {
-                        headingColors[3] = false;
-                      },
-                    )
-                  },
-                  onHover: ((event) => {
-                        setState(
-                          () {
-                            headingColors[3] = true;
-                          },
-                        )
-                      }),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        color:
-                            headingColors[3] ? Color(0xffFF4900) : Colors.black,
-                        borderRadius: BorderRadius.circular(width * 0.010)),
-                    child: Padding(
-                      padding: EdgeInsets.all(width * 0.007),
-                      child: Text(
-                        "Portfolio",
-                        style: TextStyle(
-                          fontFamily: 'Nunito',
-                          fontSize: width * 0.01,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        ),
+              ),
+              SizedBox(
+                width: width * 0.055,
+              ),
+              MouseRegion(
+                cursor: SystemMouseCursors.click,
+                onExit: (event) => {
+                  setState(
+                    () {
+                      headingColors[3] = false;
+                    },
+                  )
+                },
+                onHover: ((event) => {
+                      setState(
+                        () {
+                          headingColors[3] = true;
+                        },
+                      )
+                    }),
+                child: Container(
+                  decoration: BoxDecoration(
+                      color:
+                          headingColors[3] ?const Color(0xffFF4900) : Colors.black,
+                      borderRadius: BorderRadius.circular(width * 0.010)),
+                  child: Padding(
+                    padding: EdgeInsets.all(width * 0.007),
+                    child: Text(
+                      "Portfolio",
+                      style: TextStyle(
+                        fontFamily: 'Nunito',
+                        fontSize: width * 0.01,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: width * 0.055,
-                ),
-                 MouseRegion(
-                  cursor: SystemMouseCursors.click,
-                  child: Container(
-                    decoration: BoxDecoration(
-                        color:Color(0xffFF4900),
-                        borderRadius: BorderRadius.circular(width * 0.005)),
-                    child: Padding(
-                      padding: EdgeInsets.all(width * 0.005),
-                      child: Text(
-                        "Hire Me!",
-                        style: TextStyle(
-                          fontFamily: 'Nunito',
-                          fontSize: width * 0.01,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        ),
+              ),
+              SizedBox(
+                width: width * 0.055,
+              ),
+               MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: Container(
+                  decoration: BoxDecoration(
+                      color:const Color(0xffFF4900),
+                      borderRadius: BorderRadius.circular(width * 0.005)),
+                  child: Padding(
+                    padding: EdgeInsets.all(width * 0.005),
+                    child: Text(
+                      "Hire Me!",
+                      style: TextStyle(
+                        fontFamily: 'Nunito',
+                        fontSize: width * 0.01,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         )
       ],
